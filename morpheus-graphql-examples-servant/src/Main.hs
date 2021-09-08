@@ -1,9 +1,15 @@
+{-# LANGUAGE TemplateHaskell #-}
+{-# LANGUAGE TypeFamilies #-}
+{-# LANGUAGE DeriveGeneric #-}
+{-# OPTIONS_GHC -ddump-splices #-}
 module Main
   ( main,
   )
 where
 
-import Server.Servant (servantServer)
+import Data.Morpheus.Document (importGQLDocument)
 
-main :: IO ()
-main = servantServer
+importGQLDocument "src/schema.gql"
+
+-- main :: IO ()
+-- main = return ()

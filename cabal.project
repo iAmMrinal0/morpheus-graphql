@@ -1,0 +1,6 @@
+packages:
+    morpheus-graphql-core
+    morpheus-graphql-examples-servant
+    morpheus-graphql-subscriptions
+    morpheus-graphql.cabal
+    morpheus-graphql-app
